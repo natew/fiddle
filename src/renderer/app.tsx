@@ -123,9 +123,8 @@ export class App {
     const className = `${process.platform} container`;
     const app = (
       <div className={className}>
-        <Dialogs appState={this.state} />
-        <Header appState={this.state} />
-        <OutputEditorsWrapper appState={this.state} />
+        Todo: A timer here is terrible. Let's fix this Todo: A timer here is terrible. Let's fix this Todo: A timer here is terrible. Let's fix this Todo: A timer here is terrible. Let's fix this Todo: A timer here is terrible. Let's fix thisTodo: A timer here is terrible. Let's fix this Todo: A timer here is terrible. Let's fix this Todo: A timer here is terrible. Let's fix this Todo: A timer here is terrible. Let's fix this Todo: A timer here is terrible. Let's fix this Todo: A timer here is terrible. Let's fix this Todo: A timer here is terrible. Let's fix this Todo: A timer here is terrible. Let's fix this Todo: A timer here is terrible. Let's fix this Todo: A timer here is terrible. Let's fix this Todo: A timer here is terrible. Let's fix this Todo: A timer here is terrible. Let's fix thisTodo: A timer here is terrible. Let's fix this Todo: A timer here is terrible. Let's fix thisTodo: A timer here is terrible. Let's fix thisTodo: A timer here is terrible. Let's fix thisTodo: A timer here is terrible. Let's fix thisTodo: A timer here is terrible. Let's fix thisTodo: A timer here is terrible. Let's fix thisTodo: A timer here is terrible. Let's fix thisTodo: A timer here is terrible. Let's fix thisTodo: A timer here is terrible. Let's fix thisTodo: A timer here is terrible. Let's fix thisTodo: A timer here is terrible. Let's fix thisTodo: A timer here is terrible. Let's fix this
+        <div style={{ width: 100, height: 100, backdropFilter: 'blur(10px)', position: 'absolute', top: 0, left: 0 }} />
       </div>
     );
 
@@ -170,12 +169,6 @@ export class App {
 
     if (tag && theme.css) {
       tag.innerHTML = theme.css;
-    }
-
-    if (theme.isDark || theme.name.includes('dark')) {
-      document.body.classList.add('bp3-dark');
-    } else {
-      document.body.classList.remove('bp3-dark');
     }
   }
 
