@@ -18,7 +18,9 @@ export function getMainWindowOptions(): Electron.BrowserWindowConstructorOptions
     minWidth: 600,
     titleBarStyle: process.platform === 'darwin' ? 'hidden' : undefined,
     acceptFirstMouse: true,
-    backgroundColor: '#1d2427',
+    transparent: true,
+    backgroundColor: '#00000000',
+    vibrancy: 'dark',
     webPreferences: {
       webviewTag: false,
       nodeIntegration: true
